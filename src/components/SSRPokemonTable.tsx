@@ -1,9 +1,10 @@
 import PokemonTable from "./PokemonTable";
+import { store } from "@/store";
 
 const SSRPokemonTable = ({}) => {
   return (
     <div>
-      <PokemonTable pokemons={[]} />
+      <PokemonTable pokemons={store.getState().search.startupPokemon} />
     </div>
   );
 };
