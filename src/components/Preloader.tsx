@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react";
 import { store } from "@/store";
 import { setStartupPokemon } from "@/store/searchSlice";
